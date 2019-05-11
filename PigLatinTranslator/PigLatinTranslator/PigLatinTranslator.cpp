@@ -1,5 +1,3 @@
-// PigLatinTranslator.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
 #include <iostream>
 #include <string>
 
@@ -8,8 +6,15 @@ using namespace std;
 int main()
 {
 	string word;
+	string NewWord;
 
 	cout << "Type: " << endl;
 	cin >> word;
-	cout << "You Typed: " << word;
+
+	reverse(word.begin(), word.end());
+
+	cout << word.append("ay");
+
+
+
 }
