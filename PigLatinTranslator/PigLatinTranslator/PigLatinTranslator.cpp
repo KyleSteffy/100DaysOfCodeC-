@@ -5,16 +5,20 @@ using namespace std;
 
 int main()
 {
-	string word;
-	string NewWord;
+	string Str; //User entered string
+	string PigTranslation; //translated string
+	
+	int num = 0;
 
-	cout << "Type: " << endl;
-	cin >> word;
+	while (num == 0)
+	{
+		cout << "Type: ";
+		getline(cin, Str);
 
-	reverse(word.begin(), word.end());
+		reverse(Str.begin(), Str.end());
 
-	cout << word.append("ay");
+		cout << Str.append("ay") << endl;
 
-
+	}
 
 }
